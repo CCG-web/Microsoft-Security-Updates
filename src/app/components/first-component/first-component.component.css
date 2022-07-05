@@ -1,0 +1,22 @@
+/*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
+
+#title{
+    font-family: helvetica;
+    font-size: 25px;
+    margin-left: 10px;
+   
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#input{
+    width: 150px;
+    height: 30px;
+
+    margin-right: 10px;
+
+}

@@ -1,0 +1,38 @@
+<div class="search-container">
+  <form >
+    <fa-icon [icon]="faSearch"></fa-icon>
+      
+
+      <input type="text" [(ngModel)]="term" name="term" placeholder="pesquise pelo Pseudônimo">
+    
+  </form>
+ 
+</div>
+
+<div class="card" *ngFor="let element of jsonArray | filter: term">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="tag is-link">Pseudônimo </span> &nbsp; {{element.Alias}}
+      </p>
+     
+    </header>
+    <div class="card-content">
+      <div class="content">
+       <ul>
+        <li ><span class="tag is-primary is-light"> Data de lançamento atual </span>{{element.CurrentReleaseDate}}</li>
+        <li > <span class="tag is-primary is-light"> CvrfUrl</span> {{element.CvrfUrl}}</li>
+        <li ><span class="tag is-primary is-light">Titulo do Documento</span>{{element.DocumentTitle}}</li>
+        <li ><span class="tag is-primary is-light"> Id</span>{{element.ID}}</li>
+        <li ><span class="tag is-primary is-light">Data de lançamento inicial</span>{{element.InitialReleaseDate}}</li>
+
+       </ul>
+        <!-- <a > <b >{{apis.value[0]}}</b> 2022-06-14T07:00:00Z <br></a>
+         -->
+       
+        
+       
+      </div>
+    </div>
+    
+    <br>
+  </div>
